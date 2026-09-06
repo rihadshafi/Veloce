@@ -1,0 +1,232 @@
+/* ==========================================================================
+   Veloce Systems — Mobile-First Responsive Rules
+   Clean layout adaptation across Mobile (<768px), Tablet (768-1024px), and Desktop
+   ========================================================================== */
+
+/* Mobile Nav Drawer Overlay */
+.mobile-drawer {
+  position: fixed;
+  top: var(--header-height);
+  left: 0;
+  width: 100%;
+  height: calc(100vh - var(--header-height));
+  background-color: var(--bg-main);
+  z-index: 999;
+  padding: 2.5rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  transform: translateX(-100%);
+  transition: transform var(--transition-base);
+  border-top: 1px solid var(--border-color);
+  overflow-y: auto;
+}
+
+.mobile-drawer.open {
+  transform: translateX(0);
+}
+
+.mobile-nav-link {
+  font-size: var(--fs-lg);
+  font-weight: 600;
+  color: var(--text-main);
+  padding: 0.85rem 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.mobile-nav-link.active {
+  color: var(--brand-primary);
+}
+
+/* Page Specific Grids */
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.25rem;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.5rem;
+}
+
+.grid-hero {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+/* Stats Counter Bar Layout */
+.stats-bar {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  padding: 3.5rem 2.5rem;
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  margin-top: -4rem;
+  position: relative;
+  z-index: 10;
+}
+
+.stat-box {
+  text-align: center;
+}
+
+.stat-val {
+  font-size: var(--fs-4xl);
+  font-weight: 800;
+  color: var(--brand-primary);
+  line-height: 1.1;
+  margin-bottom: 0.5rem;
+}
+
+.stat-lbl {
+  font-size: var(--fs-sm);
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+/* Timeline Layout */
+.company-timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.company-timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  background-color: var(--border-color);
+  transform: translateX(-50%);
+}
+
+.timeline-row {
+  position: relative;
+  margin-bottom: 3.5rem;
+  width: 50%;
+  padding-right: 3rem;
+}
+
+.timeline-row:nth-child(even) {
+  margin-left: 50%;
+  padding-right: 0;
+  padding-left: 3rem;
+}
+
+.timeline-badge {
+  position: absolute;
+  top: 0;
+  right: -9px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: var(--brand-primary);
+  border: 4px solid var(--bg-main);
+}
+
+.timeline-row:nth-child(even) .timeline-badge {
+  right: auto;
+  left: -9px;
+}
+
+.timeline-box {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 1.75rem;
+}
+
+/* --------------------------------------------------------------------------
+   Media Queries
+   -------------------------------------------------------------------------- */
+
+@media (max-width: 1024px) {
+  :root {
+    --section-padding: 4.5rem;
+  }
+
+  .grid-hero {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .grid-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .stats-bar {
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 2rem;
+  }
+
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --section-padding: 3.5rem;
+    --fs-3xl: 2rem;
+    --fs-4xl: 2.5rem;
+  }
+
+  .main-nav {
+    display: none;
+  }
+
+  .mobile-nav-toggle {
+    display: flex;
+  }
+
+  .grid-3,
+  .grid-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .stats-bar {
+    grid-template-columns: 1fr;
+    padding: 2.5rem 1.5rem;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 1.25rem;
+    text-align: center;
+  }
+
+  .company-timeline::before {
+    left: 18px;
+  }
+
+  .timeline-row {
+    width: 100%;
+    padding-left: 3rem;
+    padding-right: 0;
+  }
+
+  .timeline-row:nth-child(even) {
+    margin-left: 0;
+    padding-left: 3rem;
+  }
+
+  .timeline-badge {
+    left: 9px !important;
+    right: auto !important;
+  }
+}

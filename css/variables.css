@@ -1,0 +1,100 @@
+/* ==========================================================================
+   Veloce Systems — Design Tokens & Theme Variables
+   Clean, modern, human-crafted color palettes and spacing scale
+   ========================================================================== */
+
+:root {
+  /* Color Palette — Light Mode */
+  --bg-main: #f8fafc;
+  --bg-surface: #ffffff;
+  --bg-subtle: #f1f5f9;
+  --bg-glass: rgba(255, 255, 255, 0.88);
+
+  --text-main: #0f172a;
+  --text-muted: #475569;
+  --text-faint: #64748b;
+  --text-inverse: #ffffff;
+
+  --brand-primary: #2563eb;
+  --brand-primary-hover: #1d4ed8;
+  --brand-subtle: #eff6ff;
+  --brand-border: #bfdbfe;
+
+  --border-color: #e2e8f0;
+  --border-hover: #cbd5e1;
+  --border-focus: #2563eb;
+
+  --state-success: #059669;
+  --state-success-bg: #ecfdf5;
+  --state-error: #dc2626;
+  --state-error-bg: #fef2f2;
+  --state-warning: #d97706;
+
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(15, 23, 42, 0.06), 0 2px 4px -2px rgba(15, 23, 42, 0.04);
+  --shadow-lg: 0 12px 20px -3px rgba(15, 23, 42, 0.08), 0 4px 6px -4px rgba(15, 23, 42, 0.04);
+  --shadow-xl: 0 24px 32px -8px rgba(15, 23, 42, 0.12);
+
+  /* Typography */
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', Consolas, monospace;
+
+  /* Font Sizes */
+  --fs-xs: 0.75rem;    /* 12px */
+  --fs-sm: 0.875rem;   /* 14px */
+  --fs-base: 1rem;     /* 16px */
+  --fs-md: 1.125rem;   /* 18px */
+  --fs-lg: 1.25rem;    /* 20px */
+  --fs-xl: 1.5rem;     /* 24px */
+  --fs-2xl: 2rem;      /* 32px */
+  --fs-3xl: 2.5rem;    /* 40px */
+  --fs-4xl: 3.25rem;   /* 52px */
+
+  /* Standard Professional Spacing Scale (80px section padding) */
+  --container-width: 1200px;
+  --header-height: 76px;
+  --section-padding: 5rem; /* 80px balanced padding */
+
+  /* Border Radii */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-full: 9999px;
+
+  /* Transitions */
+  --transition-fast: 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-base: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Dark Mode Palette Overrides */
+[data-theme="dark"] {
+  --bg-main: #0b0f17;
+  --bg-surface: #131b2e;
+  --bg-subtle: #1c263b;
+  --bg-glass: rgba(11, 15, 23, 0.88);
+
+  --text-main: #f8fafc;
+  --text-muted: #cbd5e1;
+  --text-faint: #94a3b8;
+  --text-inverse: #0f172a;
+
+  --brand-primary: #3b82f6;
+  --brand-primary-hover: #60a5fa;
+  --brand-subtle: rgba(59, 130, 246, 0.15);
+  --brand-border: rgba(59, 130, 246, 0.3);
+
+  --border-color: #243046;
+  --border-hover: #334361;
+  --border-focus: #60a5fa;
+
+  --state-success: #10b981;
+  --state-success-bg: rgba(16, 185, 129, 0.15);
+  --state-error: #ef4444;
+  --state-error-bg: rgba(239, 68, 68, 0.15);
+  --state-warning: #f59e0b;
+
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 12px 20px -3px rgba(0, 0, 0, 0.5);
+  --shadow-xl: 0 24px 32px -8px rgba(0, 0, 0, 0.6);
+}

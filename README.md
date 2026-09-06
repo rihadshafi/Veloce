@@ -111,10 +111,4 @@ The project consists of 4 interconnected HTML5 pages with generous section paddi
 No build tools or external servers required!
 
 1. Clone or download the repository to your computer.
-2. Open [`index.html`](file:///Users/antigravity/Desktop/RIhad/index.html) directly in any modern browser (Chrome, Firefox, Safari, Edge).
-3. Or launch a local development server using Python:
-   ```bash
-   cd /Users/antigravity/Desktop/RIhad
-   python3 -m http.server 8000
-   ```
-   Open `http://localhost:8000` in your web browser.
+2. Open [`index.html`](file:///Users/admin/index.html) directly in any modern browser (Chrome, Firefox, Safari, Edge).

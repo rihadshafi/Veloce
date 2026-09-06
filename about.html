@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us & Team — Veloce Systems</title>
+  <meta name="description" content="Learn about Veloce Systems mission, engineering values, company history timeline, core leadership team, and technical support FAQs.">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <!-- Accessibility Skip Link -->
+  <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="brand-logo" aria-label="Veloce Systems Homepage">
+        <div class="logo-badge" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+        </div>
+        <span>Veloce<span style="color: var(--brand-primary);">.io</span></span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="main-nav" aria-label="Primary Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="solutions.html" class="nav-link">Products</a>
+        <a href="about.html" class="nav-link active">About Us</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Action Items & Theme Switcher -->
+      <div class="header-actions">
+        <button class="theme-button" type="button" aria-label="Toggle color theme">
+          <svg class="theme-icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+          <svg class="theme-icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        </button>
+
+        <a href="contact.html" class="btn btn-primary btn-sm">Start Free Trial</a>
+
+        <button class="mobile-nav-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobileDrawer">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <nav class="mobile-drawer" id="mobileDrawer" aria-label="Mobile Navigation" aria-hidden="true">
+    <a href="index.html" class="mobile-nav-link">Home</a>
+    <a href="solutions.html" class="mobile-nav-link">Products</a>
+    <a href="about.html" class="mobile-nav-link active">About Us</a>
+    <a href="contact.html" class="mobile-nav-link">Contact</a>
+    <div style="margin-top: 1rem;">
+      <a href="contact.html" class="btn btn-primary" style="width: 100%;">Start Free Trial</a>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main id="main-content">
+    <!-- About Hero -->
+    <section class="section" style="padding-bottom: 4rem;">
+      <div class="container text-center" style="text-align: center; max-width: 760px; margin: 0 auto;">
+        <span class="badge" style="margin-bottom: 1.25rem;">Our Mission</span>
+        <h1 style="font-size: var(--fs-3xl); font-weight: 800; line-height: 1.2; margin-bottom: 1.25rem;">
+          Making Cloud Infrastructure Simple &amp; Fast
+        </h1>
+        <p style="font-size: var(--fs-md); color: var(--text-muted); line-height: 1.7;">
+          Veloce Systems was founded by cloud developers who were tired of spending hours configuring Kubernetes YAML files and managing server clusters. Our goal is to give engineers clean, productive tooling.
+        </p>
+      </div>
+    </section>
+
+    <!-- Engineering Principles Grid -->
+    <section class="section section-alt">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-tag">Engineering Ethos</span>
+          <h2 class="section-title">What We Believe In</h2>
+          <p class="section-subtitle">Core principles guiding our product roadmap and infrastructure design.</p>
+        </header>
+
+        <div class="grid-3">
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+            </div>
+            <h3 class="card-title">Developer Velocity</h3>
+            <p class="card-desc">Every tool we build must save developers time. If a feature adds friction or complexity, we refine it until it's simple.</p>
+          </article>
+
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+            </div>
+            <h3 class="card-title">Security by Default</h3>
+            <p class="card-desc">SSL encryption, automatic backups, and role-based access control are enabled by default for every account level.</p>
+          </article>
+
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+            </div>
+            <h3 class="card-title">Transparent Pricing</h3>
+            <p class="card-desc">No hidden egress bandwidth fees or surprise bills. Predictable pricing so engineering teams can budget with confidence.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Company History & Timeline -->
+    <section class="section">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-tag">Company Journey</span>
+          <h2 class="section-title">Milestones &amp; History</h2>
+          <p class="section-subtitle">How Veloce Systems grew from a weekend side-project to powering over 1,200 active engineering teams.</p>
+        </header>
+
+        <div class="company-timeline" aria-label="Company Milestones Timeline">
+          <div class="timeline-row">
+            <div class="timeline-badge" aria-hidden="true"></div>
+            <div class="timeline-box">
+              <div style="font-size: var(--fs-xs); font-weight: 700; color: var(--brand-primary); margin-bottom: 0.35rem;">2021 — FOUNDED</div>
+              <h3 style="font-size: var(--fs-base); font-weight: 700; color: var(--text-main); margin-bottom: 0.5rem;">Veloce CLI Launched</h3>
+              <p style="font-size: var(--fs-sm); color: var(--text-muted); line-height: 1.6;">Initial release of our open-source command line deployment tool in Seattle, WA.</p>
+            </div>
+          </div>
+
+          <div class="timeline-row">
+            <div class="timeline-badge" aria-hidden="true"></div>
+            <div class="timeline-box">
+              <div style="font-size: var(--fs-xs); font-weight: 700; color: var(--brand-primary); margin-bottom: 0.35rem;">2023 — EXPANSION</div>
+              <h3 style="font-size: var(--fs-base); font-weight: 700; color: var(--text-main); margin-bottom: 0.5rem;">Managed PostgreSQL Added</h3>
+              <p style="font-size: var(--fs-sm); color: var(--text-muted); line-height: 1.6;">Introduced automated database provisioning and edge caching nodes across 12 global POP regions.</p>
+            </div>
+          </div>
+
+          <div class="timeline-row">
+            <div class="timeline-badge" aria-hidden="true"></div>
+            <div class="timeline-box">
+              <div style="font-size: var(--fs-xs); font-weight: 700; color: var(--brand-primary); margin-bottom: 0.35rem;">2024 — SERIES A</div>
+              <h3 style="font-size: var(--fs-base); font-weight: 700; color: var(--text-main); margin-bottom: 0.5rem;">SOC2 Certification &amp; Enterprise Tier</h3>
+              <p style="font-size: var(--fs-sm); color: var(--text-muted); line-height: 1.6;">Achieved SOC2 Type II compliance and launched 24/7 dedicated support SLAs for enterprise customers.</p>
+            </div>
+          </div>
+
+          <div class="timeline-row">
+            <div class="timeline-badge" aria-hidden="true"></div>
+            <div class="timeline-box">
+              <div style="font-size: var(--fs-xs); font-weight: 700; color: var(--brand-primary); margin-bottom: 0.35rem;">2026 — PRESENT</div>
+              <h3 style="font-size: var(--fs-base); font-weight: 700; color: var(--text-main); margin-bottom: 0.5rem;">Veloce Cloud 3.4 &amp; 28 Edge POPs</h3>
+              <p style="font-size: var(--fs-sm); color: var(--text-muted); line-height: 1.6;">Now serving over 180 million monthly API requests across North America, Europe, and Asia.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Leadership Team Section -->
+    <section class="section section-alt" id="team">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-tag">Engineering Team</span>
+          <h2 class="section-title">Built by Software Engineers</h2>
+          <p class="section-subtitle">Meet the team dedicated to building reliable cloud infrastructure.</p>
+        </header>
+
+        <div class="grid-3">
+          <article class="card" style="text-align: center;">
+            <div style="width: 72px; height: 72px; border-radius: 50%; background-color: var(--brand-primary); color: #ffffff; font-size: 1.5rem; font-weight: 700; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.25rem auto;" aria-hidden="true">MC</div>
+            <h3 class="card-title" style="margin-bottom: 0.25rem;">Marcus Chen</h3>
+            <span class="badge" style="margin-bottom: 1rem; align-self: center;">Co-Founder &amp; CEO</span>
+            <p class="card-desc">Former backend lead at Cloudflare. 12+ years building distributed networking and DNS routing platforms.</p>
+          </article>
+
+          <article class="card" style="text-align: center;">
+            <div style="width: 72px; height: 72px; border-radius: 50%; background-color: var(--brand-primary); color: #ffffff; font-size: 1.5rem; font-weight: 700; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.25rem auto;" aria-hidden="true">HA</div>
+            <h3 class="card-title" style="margin-bottom: 0.25rem;">Hannah Adler</h3>
+            <span class="badge" style="margin-bottom: 1rem; align-self: center;">Chief Technology Officer</span>
+            <p class="card-desc">Systems researcher specializing in PostgreSQL kernel optimization and NVMe database storage drivers.</p>
+          </article>
+
+          <article class="card" style="text-align: center;">
+            <div style="width: 72px; height: 72px; border-radius: 50%; background-color: var(--brand-primary); color: #ffffff; font-size: 1.5rem; font-weight: 700; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.25rem auto;" aria-hidden="true">DL</div>
+            <h3 class="card-title" style="margin-bottom: 0.25rem;">David Lawson</h3>
+            <span class="badge" style="margin-bottom: 1rem; align-self: center;">Head of Customer Engineering</span>
+            <p class="card-desc">Focused on developer experience, CLI tooling, documentation, and enterprise migration support.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Accessible FAQ Accordion Section -->
+    <section class="section" id="faq">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-tag">Frequently Asked Questions</span>
+          <h2 class="section-title">Support &amp; Technical FAQs</h2>
+          <p class="section-subtitle">Common questions about deploying, migrating, and managing your projects on Veloce Systems.</p>
+        </header>
+
+        <div class="accordion-wrapper" id="faqAccordion">
+          <!-- FAQ Item 1 -->
+          <div class="accordion-item">
+            <h3>
+              <button class="accordion-trigger" type="button" aria-expanded="false" aria-controls="faq-ans-1" id="faq-q-1">
+                <span>How easy is it to migrate from another cloud provider?</span>
+                <svg class="accordion-icon" viewBox="0 0 24 24" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </button>
+            </h3>
+            <div class="accordion-content" id="faq-ans-1" aria-labelledby="faq-q-1" aria-hidden="true">
+              <p>Migrating takes minutes. You can import any GitHub or GitLab repository directly, or run <code>veloce deploy</code> from your local command line interface. We support standard Dockerfiles, Node.js, Python, Go, and static builds out of the box.</p>
+            </div>
+          </div>
+
+          <!-- FAQ Item 2 -->
+          <div class="accordion-item">
+            <h3>
+              <button class="accordion-trigger" type="button" aria-expanded="false" aria-controls="faq-ans-2" id="faq-q-2">
+                <span>What happens if my project exceeds free tier limits?</span>
+                <svg class="accordion-icon" viewBox="0 0 24 24" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </button>
+            </h3>
+            <div class="accordion-content" id="faq-ans-2" aria-labelledby="faq-q-2" aria-hidden="true">
+              <p>We never shut off your application abruptly. If you approach 100% of your bandwidth or database quota, you will receive an email notification offering a 7-day grace window to upgrade to our $29/month Pro plan.</p>
+            </div>
+          </div>
+
+          <!-- FAQ Item 3 -->
+          <div class="accordion-item">
+            <h3>
+              <button class="accordion-trigger" type="button" aria-expanded="false" aria-controls="faq-ans-3" id="faq-q-3">
+                <span>Are databases backed up automatically?</span>
+                <svg class="accordion-icon" viewBox="0 0 24 24" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </button>
+            </h3>
+            <div class="accordion-content" id="faq-ans-3" aria-labelledby="faq-q-3" aria-hidden="true">
+              <p>Yes. Managed PostgreSQL instances include automated daily snapshots with point-in-time recovery for up to 30 days on Pro and Enterprise tiers.</p>
+            </div>
+          </div>
+
+          <!-- FAQ Item 4 -->
+          <div class="accordion-item">
+            <h3>
+              <button class="accordion-trigger" type="button" aria-expanded="false" aria-controls="faq-ans-4" id="faq-q-4">
+                <span>Is Veloce SOC 2 compliant for security audits?</span>
+                <svg class="accordion-icon" viewBox="0 0 24 24" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </button>
+            </h3>
+            <div class="accordion-content" id="faq-ans-4" aria-labelledby="faq-q-4" aria-hidden="true">
+              <p>Yes. Veloce Systems is SOC 2 Type II certified. We enforce TLS 1.3 encryption for data in transit and AES-256 for data at rest across all global edge data centers.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo" aria-label="Veloce Systems Footer Logo">
+            <div class="logo-badge" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+            </div>
+            <span>Veloce<span style="color: var(--brand-primary);">.io</span></span>
+          </a>
+          <p>Modern developer cloud infrastructure providing high-speed hosting, API gateways, and managed databases.</p>
+        </div>
+
+        <div>
+          <h3 class="footer-col-title">Products</h3>
+          <ul class="footer-links-list">
+            <li><a href="solutions.html">Serverless Hosting</a></li>
+            <li><a href="solutions.html">Managed PostgreSQL</a></li>
+            <li><a href="solutions.html">API Gateway</a></li>
+            <li><a href="solutions.html">Edge CDN Mesh</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-col-title">Company</h3>
+          <ul class="footer-links-list">
+            <li><a href="about.html">About Veloce</a></li>
+            <li><a href="about.html#team">Engineering Team</a></li>
+            <li><a href="about.html#faq">FAQ &amp; Support</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-col-title">Resources</h3>
+          <ul class="footer-links-list">
+            <li><a href="solutions.html">CLI Documentation</a></li>
+            <li><a href="solutions.html">API Reference</a></li>
+            <li><a href="contact.html">System Status</a></li>
+            <li><a href="contact.html">Enterprise Support</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Veloce Systems Inc. All rights reserved. Built with HTML5, CSS3 &amp; Vanilla JavaScript.</p>
+        <div class="footer-social-links" aria-label="Social Media Links">
+          <a href="#" aria-label="GitHub Repository"><svg viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a>
+          <a href="#" aria-label="LinkedIn Profile"><svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a>
+          <a href="#" aria-label="Twitter X Profile"><svg viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/theme.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/accordion.js"></script>
+</body>
+</html>

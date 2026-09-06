@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products & Cloud Infrastructure — Veloce Systems</title>
+  <meta name="description" content="Explore Veloce Systems product catalog: Serverless Web Hosting, Managed PostgreSQL, API Security Gateways, and Real-Time Event Meshes.">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <!-- Accessibility Skip Link -->
+  <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="brand-logo" aria-label="Veloce Systems Homepage">
+        <div class="logo-badge" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+        </div>
+        <span>Veloce<span style="color: var(--brand-primary);">.io</span></span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="main-nav" aria-label="Primary Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="solutions.html" class="nav-link active">Products</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Action Items & Theme Switcher -->
+      <div class="header-actions">
+        <button class="theme-button" type="button" aria-label="Toggle color theme">
+          <svg class="theme-icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+          <svg class="theme-icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        </button>
+
+        <a href="contact.html" class="btn btn-primary btn-sm">Start Free Trial</a>
+
+        <button class="mobile-nav-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobileDrawer">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <nav class="mobile-drawer" id="mobileDrawer" aria-label="Mobile Navigation" aria-hidden="true">
+    <a href="index.html" class="mobile-nav-link">Home</a>
+    <a href="solutions.html" class="mobile-nav-link active">Products</a>
+    <a href="about.html" class="mobile-nav-link">About Us</a>
+    <a href="contact.html" class="mobile-nav-link">Contact</a>
+    <div style="margin-top: 1rem;">
+      <a href="contact.html" class="btn btn-primary" style="width: 100%;">Start Free Trial</a>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main id="main-content">
+    <!-- Products Page Hero -->
+    <section class="section" style="padding-bottom: 4rem;">
+      <div class="container text-center" style="text-align: center; max-width: 760px; margin: 0 auto;">
+        <span class="badge" style="margin-bottom: 1.25rem;">Developer Tools &amp; Infrastructure</span>
+        <h1 style="font-size: var(--fs-3xl); font-weight: 800; line-height: 1.2; margin-bottom: 1.25rem;">
+          Modular Cloud Products Built for Speed
+        </h1>
+        <p style="font-size: var(--fs-md); color: var(--text-muted); line-height: 1.7;">
+          Explore our product catalog below. Use category filters or live text search to find specific cloud modules, or click any item to view complete technical specifications.
+        </p>
+      </div>
+    </section>
+
+    <!-- Catalog Controls & Interactive Filter -->
+    <section class="section section-alt">
+      <div class="container">
+        <!-- Filter Controls Bar -->
+        <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 1.5rem; margin-bottom: 3rem;">
+          <div class="filter-chip-group" role="tablist" aria-label="Product Categories">
+            <button class="filter-chip active" data-category="all" type="button" role="tab">All Products</button>
+            <button class="filter-chip" data-category="hosting" type="button" role="tab">Hosting</button>
+            <button class="filter-chip" data-category="database" type="button" role="tab">Databases</button>
+            <button class="filter-chip" data-category="api" type="button" role="tab">API Gateways</button>
+            <button class="filter-chip" data-category="security" type="button" role="tab">Security</button>
+          </div>
+
+          <!-- Live Search Input -->
+          <div style="min-width: 280px;">
+            <label for="catalogSearch" class="sr-only">Search products</label>
+            <input type="search" id="catalogSearch" class="form-input" placeholder="🔍 Search products..." aria-label="Search products catalog">
+          </div>
+        </div>
+
+        <!-- Filterable Grid of Product Cards -->
+        <div class="grid-3" id="productsGrid">
+          <!-- Card 1 -->
+          <article class="card card-hover product-card" data-category="hosting" data-title="Veloce Edge Hosting" data-desc="Zero-config deployment engine with automatic SSL, branch preview deployments, and global CDN caching." data-specs="Bandwidth: 100 GB Included|Deploy Time: <3 Seconds|SSL Certificate: Free Let's Encrypt|Custom Domains: Unlimited">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path></svg>
+            </div>
+            <span class="badge" style="width: fit-content; margin-bottom: 0.5rem;">Hosting</span>
+            <h2 class="card-title">Veloce Edge Hosting</h2>
+            <p class="card-desc">Zero-config deployment engine with automatic SSL, branch preview deployments, and global CDN caching.</p>
+            <div class="card-footer">
+              <button class="btn btn-outline btn-sm view-spec-btn" style="width: 100%;" type="button">View Specifications</button>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="card card-hover product-card" data-category="database" data-title="Managed PostgreSQL Engine" data-desc="Fully managed relational database instances with connection pooling, point-in-time recovery, and auto-scaling storage." data-specs="Storage: NVMe SSD|Connection Pooling: Built-in PgBouncer|Backup Retention: 30 Days|SLA: 99.99% Uptime">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
+            </div>
+            <span class="badge" style="width: fit-content; margin-bottom: 0.5rem;">Databases</span>
+            <h2 class="card-title">Managed PostgreSQL Engine</h2>
+            <p class="card-desc">Fully managed relational database instances with connection pooling, point-in-time recovery, and auto-scaling storage.</p>
+            <div class="card-footer">
+              <button class="btn btn-outline btn-sm view-spec-btn" style="width: 100%;" type="button">View Specifications</button>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="card card-hover product-card" data-category="api" data-title="Veloce API Gateway" data-desc="Ultra-fast request router providing rate limiting, JWT token validation, CORS configuration, and request logging." data-specs="Request Speed: <5ms|Auth Support: OAuth2, JWT, API Keys|Rate Limiting: Token Bucket Algorithm|Metrics: Real-time Prometheus">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+            </div>
+            <span class="badge" style="width: fit-content; margin-bottom: 0.5rem;">API Gateways</span>
+            <h2 class="card-title">Veloce API Gateway</h2>
+            <p class="card-desc">Ultra-fast request router providing rate limiting, JWT token validation, CORS configuration, and request logging.</p>
+            <div class="card-footer">
+              <button class="btn btn-outline btn-sm view-spec-btn" style="width: 100%;" type="button">View Specifications</button>
+            </div>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="card card-hover product-card" data-category="security" data-title="Zero-Trust Firewall Proxy" data-desc="Edge security shield protecting your cloud applications against DDoS attacks, SQL injection, and automated bot networks." data-specs="DDoS Protection: Unlimited L3/L4/L7|Rule Updates: Automated Real-time|Compliance: SOC2, PCI-DSS|Latency Impact: <1ms">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+            </div>
+            <span class="badge" style="width: fit-content; margin-bottom: 0.5rem;">Security</span>
+            <h2 class="card-title">Zero-Trust Firewall Proxy</h2>
+            <p class="card-desc">Edge security shield protecting your cloud applications against DDoS attacks, SQL injection, and automated bot networks.</p>
+            <div class="card-footer">
+              <button class="btn btn-outline btn-sm view-spec-btn" style="width: 100%;" type="button">View Specifications</button>
+            </div>
+          </article>
+
+          <!-- Card 5 -->
+          <article class="card card-hover product-card" data-category="database" data-title="Veloce KV Key-Value Store" data-desc="Low-latency in-memory cache compatible with Redis protocols for ultra-fast session storage and user state management." data-specs="Protocol: Redis v7 Compatible|Replication: Multi-Region Active|Memory Limit: Up to 512GB|Persistence: Snapshot & AOF">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
+            </div>
+            <span class="badge" style="width: fit-content; margin-bottom: 0.5rem;">Databases</span>
+            <h2 class="card-title">Veloce KV Key-Value Store</h2>
+            <p class="card-desc">Low-latency in-memory cache compatible with Redis protocols for ultra-fast session storage and user state management.</p>
+            <div class="card-footer">
+              <button class="btn btn-outline btn-sm view-spec-btn" style="width: 100%;" type="button">View Specifications</button>
+            </div>
+          </article>
+
+          <!-- Card 6 -->
+          <article class="card card-hover product-card" data-category="hosting" data-title="Serverless Edge Functions" data-desc="Run event-driven backend functions close to your users with zero cold start times and automatic scaling." data-specs="Runtimes: V8 Isolates (Node/TS, Rust)|Cold Start: <1ms|Execution Limit: 30 Seconds|Memory: Up to 1024MB per fn">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+            </div>
+            <span class="badge" style="width: fit-content; margin-bottom: 0.5rem;">Hosting</span>
+            <h2 class="card-title">Serverless Edge Functions</h2>
+            <p class="card-desc">Run event-driven backend functions close to your users with zero cold start times and automatic scaling.</p>
+            <div class="card-footer">
+              <button class="btn btn-outline btn-sm view-spec-btn" style="width: 100%;" type="button">View Specifications</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Plan Comparison Table -->
+    <section class="section">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-tag">Tier Comparison</span>
+          <h2 class="section-title">Developer Pricing Tiers</h2>
+          <p class="section-subtitle">Choose the right plan for your individual project or enterprise team.</p>
+        </header>
+
+        <div style="overflow-x: auto; border: 1px solid var(--border-color); border-radius: var(--radius-lg); background-color: var(--bg-surface); box-shadow: var(--shadow-sm);">
+          <table style="width: 100%; border-collapse: collapse; text-align: left; font-size: var(--fs-sm);" aria-label="Product Plan Comparison Table">
+            <thead>
+              <tr style="background-color: var(--bg-subtle); border-bottom: 1px solid var(--border-color);">
+                <th scope="col" style="padding: 1.25rem 1.5rem; font-size: var(--fs-base); font-weight: 700;">Plan Features</th>
+                <th scope="col" style="padding: 1.25rem 1.5rem; font-size: var(--fs-base); font-weight: 700;">Hobby (Free)</th>
+                <th scope="col" style="padding: 1.25rem 1.5rem; font-size: var(--fs-base); font-weight: 700; color: var(--brand-primary);">Pro ($29/mo)</th>
+                <th scope="col" style="padding: 1.25rem 1.5rem; font-size: var(--fs-base); font-weight: 700;">Enterprise</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="border-bottom: 1px solid var(--border-color);">
+                <th scope="row" style="padding: 1.25rem 1.5rem;">Included Bandwidth</th>
+                <td style="padding: 1.25rem 1.5rem;">100 GB / mo</td>
+                <td style="padding: 1.25rem 1.5rem; font-weight: 600;">1 TB / mo</td>
+                <td style="padding: 1.25rem 1.5rem;">Custom Unlimited</td>
+              </tr>
+              <tr style="border-bottom: 1px solid var(--border-color);">
+                <th scope="row" style="padding: 1.25rem 1.5rem;">Managed PostgreSQL</th>
+                <td style="padding: 1.25rem 1.5rem;">500 MB DB</td>
+                <td style="padding: 1.25rem 1.5rem; font-weight: 600;">20 GB NVMe DB</td>
+                <td style="padding: 1.25rem 1.5rem;">Dedicated Cluster</td>
+              </tr>
+              <tr style="border-bottom: 1px solid var(--border-color);">
+                <th scope="row" style="padding: 1.25rem 1.5rem;">Global Edge Nodes</th>
+                <td style="padding: 1.25rem 1.5rem;">3 POP Locations</td>
+                <td style="padding: 1.25rem 1.5rem; font-weight: 600;">28 POP Locations</td>
+                <td style="padding: 1.25rem 1.5rem;">Dedicated POPs</td>
+              </tr>
+              <tr style="border-bottom: 1px solid var(--border-color);">
+                <th scope="row" style="padding: 1.25rem 1.5rem;">Support SLA</th>
+                <td style="padding: 1.25rem 1.5rem;">Community Forum</td>
+                <td style="padding: 1.25rem 1.5rem; font-weight: 600;">24h Email Support</td>
+                <td style="padding: 1.25rem 1.5rem; color: var(--state-success); font-weight: bold;">✔ 1h 24/7 Phone SLA</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Accessible Dialog Modal -->
+    <dialog class="custom-dialog" id="productDialog" aria-labelledby="dialogTitle" aria-describedby="dialogDesc">
+      <div class="dialog-wrapper">
+        <div class="dialog-header">
+          <div>
+            <span class="badge" id="dialogCategory">PRODUCT</span>
+            <h2 class="dialog-title" id="dialogTitle" style="margin-top: 0.5rem;">Technical Breakdown</h2>
+          </div>
+          <button class="dialog-close-btn" id="dialogCloseBtn" type="button" aria-label="Close dialog window">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+          </button>
+        </div>
+        <div class="dialog-body">
+          <p id="dialogDesc">Detailed technical breakdown of selected platform component.</p>
+          <div style="margin-top: 1.5rem;">
+            <h3 style="font-size: var(--fs-base); font-weight: 700; margin-bottom: 0.75rem; color: var(--text-main);">Key Specifications:</h3>
+            <ul id="dialogSpecs" style="display: flex; flex-direction: column; gap: 0.6rem; font-size: var(--fs-sm); color: var(--text-muted);">
+              <!-- Dynamic JS content -->
+            </ul>
+          </div>
+        </div>
+        <div class="dialog-footer">
+          <a href="contact.html" class="btn btn-primary btn-sm">Request Product Demo</a>
+        </div>
+      </div>
+    </dialog>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo" aria-label="Veloce Systems Footer Logo">
+            <div class="logo-badge" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+            </div>
+            <span>Veloce<span style="color: var(--brand-primary);">.io</span></span>
+          </a>
+          <p>Modern developer cloud infrastructure providing high-speed hosting, API gateways, and managed databases.</p>
+        </div>
+
+        <div>
+          <h3 class="footer-col-title">Products</h3>
+          <ul class="footer-links-list">
+            <li><a href="solutions.html">Serverless Hosting</a></li>
+            <li><a href="solutions.html">Managed PostgreSQL</a></li>
+            <li><a href="solutions.html">API Gateway</a></li>
+            <li><a href="solutions.html">Edge CDN Mesh</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-col-title">Company</h3>
+          <ul class="footer-links-list">
+            <li><a href="about.html">About Veloce</a></li>
+            <li><a href="about.html#team">Engineering Team</a></li>
+            <li><a href="about.html#faq">FAQ &amp; Support</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-col-title">Resources</h3>
+          <ul class="footer-links-list">
+            <li><a href="solutions.html">CLI Documentation</a></li>
+            <li><a href="solutions.html">API Reference</a></li>
+            <li><a href="contact.html">System Status</a></li>
+            <li><a href="contact.html">Enterprise Support</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Veloce Systems Inc. All rights reserved. Built with HTML5, CSS3 &amp; Vanilla JavaScript.</p>
+        <div class="footer-social-links" aria-label="Social Media Links">
+          <a href="#" aria-label="GitHub Repository"><svg viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a>
+          <a href="#" aria-label="LinkedIn Profile"><svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a>
+          <a href="#" aria-label="Twitter X Profile"><svg viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/theme.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/catalog.js"></script>
+</body>
+</html>

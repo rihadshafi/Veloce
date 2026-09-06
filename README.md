@@ -84,12 +84,11 @@ The project consists of 4 interconnected HTML5 pages with generous section paddi
 ## 📁 Repository Directory Layout
 
 ```
-/Users/antigravity/Desktop/RIhad/
+/Users/Desktop/Veloce/
 ├── index.html              # Home Page
 ├── solutions.html          # Products Page
 ├── about.html              # About Us & Team Page
 ├── contact.html            # Contact & Support Page
-├── PROJECT_REPORT.md       # Project Report Documentation
 ├── README.md               # Repository Documentation
 ├── css/
 │   ├── variables.css       # Color tokens (Light & Dark theme) and typography
